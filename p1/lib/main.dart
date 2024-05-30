@@ -27,11 +27,12 @@ class BaseScreen extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            color: Colors.red,
             height: 100,
             width: double.infinity,
             margin: const EdgeInsets.all(20.0),
             decoration: BoxDecoration(
+              border:  Border.all(),
+              color: Colors.red,
               borderRadius: BorderRadius.circular(20),
             ),
             child: const Center(
@@ -45,6 +46,12 @@ class BaseScreen extends StatelessWidget {
             color: Colors.green,
             height: 150,
             width: double.infinity,
+            margin: const EdgeInsets.all(20.0),
+            decoration: BoxDecoration(
+              border:  Border.all(),
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(20),
+            ),
             child: const Center(
               child: Text(
                 'Deuxième',
@@ -56,6 +63,12 @@ class BaseScreen extends StatelessWidget {
             color: Colors.blue,
             height: 200,
             width: double.infinity,
+            margin: const EdgeInsets.all(20.0),
+            decoration: BoxDecoration(
+              border:  Border.all(),
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(20),
+            ),
             child: const Center(
               child: Text(
                 'Troisième',
