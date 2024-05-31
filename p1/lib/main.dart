@@ -47,7 +47,7 @@ class BaseScreen extends StatelessWidget {
             width: double.infinity,
             margin: const EdgeInsets.all(20.0),
             decoration: BoxDecoration(
-              border:  Border.all(),
+              border: Border.all(),
               color: Colors.green,
               borderRadius: BorderRadius.circular(20),
             ),
@@ -63,7 +63,7 @@ class BaseScreen extends StatelessWidget {
             width: double.infinity,
             margin: const EdgeInsets.all(20.0),
             decoration: BoxDecoration(
-              border:  Border.all(),
+              border: Border.all(),
               color: Colors.blue,
               borderRadius: BorderRadius.circular(20),
             ),
@@ -112,13 +112,10 @@ class BaseScreen extends StatelessWidget {
             ],
           ),
           Expanded(
-            child: Scaffold(
-              appBar: AppBar(
-                title: const Text('Nouvel Écran avec Colonnes et Rangs'),
-              ),
-              body: Column(
-                children: [
-                  Row(
+            child: Column(
+              children: [
+                Expanded(
+                  child: Row(
                     children: [
                       Container(
                         color: Colors.teal,
@@ -144,7 +141,9 @@ class BaseScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Row(
+                ),
+                Expanded(
+                  child: Row(
                     children: [
                       Container(
                         color: Colors.indigo,
@@ -170,45 +169,43 @@ class BaseScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Expanded(
-            child: Scaffold(
-                appBar: AppBar(
-                  title: const Text('Écran avec Colonnes et Rangs'),
+            child: Column(
+              children: [
+                Expanded(
+                  child: Container(
+                    width: 100,
+                    color: Colors.red,
+                    child: const Center(
+                      child: Text('Container 1'),
+                    ),
+                  ),
                 ),
-                body: Column(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        color: Colors.red,
-                        child: Center(
-                          child: Text('Container 1'),
-                        ),
-                      ),
+                Expanded(
+                  child: Container(
+                    width: 200,
+                    color: Colors.green,
+                    child: const Center(
+                      child: Text('Container 2'),
                     ),
-                    Expanded(
-                      child: Container(
-                        color: Colors.green,
-                        child: Center(
-                          child: Text('Container 2'),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text('Container 3'),
-                        ),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
+                Expanded(
+                  child: Container(
+                    width: 300,
+                    color: Colors.blue,
+                    child: const Center(
+                      child: Text('Container 3'),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          )
+          ),
         ],
       ),
     );
