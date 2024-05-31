@@ -31,7 +31,7 @@ class BaseScreen extends StatelessWidget {
             width: double.infinity,
             margin: const EdgeInsets.all(20.0),
             decoration: BoxDecoration(
-              border:  Border.all(),
+              border: Border.all(),
               color: Colors.red,
               borderRadius: BorderRadius.circular(20),
             ),
@@ -176,6 +176,41 @@ class BaseScreen extends StatelessWidget {
               ),
             ),
           ),
+          // Expanded(
+          //   child: Scaffold(
+          //       appBar: AppBar(
+          //         title: const Text('Écran avec Colonnes et Rangs'),
+          //       ),
+          //       body: Column(
+          //         children: [
+          //           Expanded(
+          //             child: Container(
+          //               color: Colors.red,
+          //               child: Center(
+          //                 child: Text('Container 1'),
+          //               ),
+          //             ),
+          //           ),
+          //           Expanded(
+          //             child: Container(
+          //               color: Colors.green,
+          //               child: Center(
+          //                 child: Text('Container 2'),
+          //               ),
+          //             ),
+          //           ),
+          //           Expanded(
+          //             child: Container(
+          //               color: Colors.blue,
+          //               child: Center(
+          //                 child: Text('Container 3'),
+          //               ),
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //   ),
+          // )
         ],
       ),
     );
