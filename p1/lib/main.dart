@@ -43,7 +43,6 @@ class BaseScreen extends StatelessWidget {
             ),
           ),
           Container(
-            color: Colors.green,
             height: 150,
             width: double.infinity,
             margin: const EdgeInsets.all(20.0),
@@ -60,7 +59,6 @@ class BaseScreen extends StatelessWidget {
             ),
           ),
           Container(
-            color: Colors.blue,
             height: 200,
             width: double.infinity,
             margin: const EdgeInsets.all(20.0),
@@ -176,41 +174,41 @@ class BaseScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Expanded(
-          //   child: Scaffold(
-          //       appBar: AppBar(
-          //         title: const Text('Écran avec Colonnes et Rangs'),
-          //       ),
-          //       body: Column(
-          //         children: [
-          //           Expanded(
-          //             child: Container(
-          //               color: Colors.red,
-          //               child: Center(
-          //                 child: Text('Container 1'),
-          //               ),
-          //             ),
-          //           ),
-          //           Expanded(
-          //             child: Container(
-          //               color: Colors.green,
-          //               child: Center(
-          //                 child: Text('Container 2'),
-          //               ),
-          //             ),
-          //           ),
-          //           Expanded(
-          //             child: Container(
-          //               color: Colors.blue,
-          //               child: Center(
-          //                 child: Text('Container 3'),
-          //               ),
-          //             ),
-          //           ),
-          //         ],
-          //       ),
-          //   ),
-          // )
+          Expanded(
+            child: Scaffold(
+                appBar: AppBar(
+                  title: const Text('Écran avec Colonnes et Rangs'),
+                ),
+                body: Column(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        color: Colors.red,
+                        child: Center(
+                          child: Text('Container 1'),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.green,
+                        child: Center(
+                          child: Text('Container 2'),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.blue,
+                        child: Center(
+                          child: Text('Container 3'),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+            ),
+          )
         ],
       ),
     );
